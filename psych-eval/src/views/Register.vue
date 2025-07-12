@@ -50,7 +50,7 @@
         <button
           type="submit"
           :disabled="loading"
-          class="w-full bg-green-500 text-white py-3 rounded-lg hover:bg-green-600 transition disabled:opacity-50"
+          class="w-full bg-blue-500 text-white py-3 rounded-lg hover:bg-blue-600 transition disabled:opacity-50"
         >
           {{ loading ? '注册中...' : '注册' }}
         </button>
@@ -58,7 +58,7 @@
       <!-- 跳转登录 -->
       <p class="mt-4 text-center">
         已有账号？
-        <router-link to="/login" class="text-green-500 hover:underline">登录</router-link>
+        <router-link to="/login" class="text-blue-500 hover:underline">登录</router-link>
       </p>
     </div>
   </div>

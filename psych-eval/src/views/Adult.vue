@@ -2,8 +2,8 @@
 <template>
   <div class="flex min-h-screen">
     <!-- 深色侧边栏 -->
-    <aside class="w-64 bg-blue-800 text-white flex flex-col">
-      <div class="px-6 py-5 text-2xl font-bold border-b border-blue-700">
+    <aside class="w-100 bg-green-800 text-white flex flex-col">
+      <div class="px-6 py-5 text-2xl font-bold border-b border-green-700">
         心理测评
       </div>
       <nav class="flex-1 overflow-y-auto">
@@ -14,8 +14,8 @@
               :class="[
                 'w-full flex items-center px-6 py-3 transition-colors duration-200',
                 selected === mode.value
-                  ? 'bg-blue-700 text-white'
-                  : 'hover:bg-blue-700 text-white'
+                  ? 'bg-green-700 text-white'
+                  : 'hover:bg-green-700 text-white'
               ]"
             >
               <span class="mr-3 text-xl">{{ mode.icon }}</span>
@@ -25,7 +25,7 @@
         </ul>
       </nav>
       <!-- 底部信息 -->
-      <div class="px-6 py-4 text-sm border-t border-blue-700">
+      <div class="px-6 py-4 text-sm border-t border-green-700">
         <div class="flex justify-between items-center">
           <span>版本 1.0</span>
           <button
@@ -39,7 +39,7 @@
     </aside>
 
     <!-- 卡片式主内容区 -->
-    <main class="flex-1 bg-gray-100 p-8 overflow-auto">
+    <main class="flex-1 bg-green-100 p-8 overflow-auto">
       <!-- 概览 -->
       <div
         v-if="selected === 'overview'"
@@ -121,11 +121,11 @@ export default {
     return {
       selected: 'overview',
       modes: [
-        { label: '概览',     value: 'overview', icon: '🧑‍🎓' },
-        { label: '文本描述', value: 'text',     icon: '💬'   },
-        { label: '填写问卷', value: 'survey',   icon: '📝'   },
-        { label: '画图评估', value: 'image',    icon: '🖼️'  },
-        { label: '综合评估', value: 'evaluate', icon: '🔀'   }
+        { label: '概览',     value: 'overview', icon: '' },
+        { label: '文本描述', value: 'text',     icon: ''   },
+        { label: '填写问卷', value: 'survey',   icon: ''   },
+        { label: '画图评估', value: 'image',    icon: ''  },
+        { label: '综合评估', value: 'evaluate', icon: ''   }
       ]
     }
   },

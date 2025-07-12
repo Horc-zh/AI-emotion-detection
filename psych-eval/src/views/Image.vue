@@ -1,7 +1,7 @@
 <template>
-  <div class="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-100 to-blue-300 p-6">
+  <div class="min-h-screen flex items-center justify-center bg-gradient-to-br from-green-100 to-green-300 p-6">
     <div class="bg-white/90 backdrop-blur-md p-10 rounded-3xl shadow-2xl w-full max-w-3xl border border-gray-200">
-      <h2 class="text-4xl font-bold text-gray-800 mb-8 text-center">🖌️ 图片心理评估</h2>
+      <h2 class="text-4xl font-bold text-gray-800 mb-8 text-center">图片心理评估</h2>
 
       <!-- 文件上传区域 -->
       <div class="mb-6 text-center">
@@ -17,7 +17,7 @@
         <!-- 自定义样式的按钮 -->
         <label
           for="fileInput"
-          class="inline-block bg-blue-500 hover:bg-blue-600 text-white font-medium py-2 px-6 rounded-lg shadow-md cursor-pointer transition duration-300"
+          class="inline-block bg-green-500 hover:bg-green-600 text-white font-medium py-2 px-6 rounded-lg shadow-md cursor-pointer transition duration-300"
         >
           📁 选择图片
         </label>

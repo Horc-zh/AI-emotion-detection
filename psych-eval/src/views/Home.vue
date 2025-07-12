@@ -1,10 +1,10 @@
 <template>
-  <div class="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-100 to-blue-300 p-4">
+  <div class="min-h-screen flex items-center justify-center bg-gradient-to-br from-red-100 to-green-300 p-4">
     <div class="bg-white/90 backdrop-blur-lg border border-gray-200 rounded-3xl shadow-2xl w-full max-w-2xl p-10">
       <!-- 步骤 1：基本信息收集 -->
       <div class="text-center">
-        <h1 class="text-4xl font-extrabold text-gray-800 mb-6">🧠 心理评估系统</h1>
-        <p class="text-lg text-gray-600 mb-8">您好，欢迎使用心理评估系统，请问您的性别和年龄是？</p>
+        <h1 class="text-4xl font-extrabold text-gray-800 mb-6">💗 心理健康评估系统</h1>
+        <p class="text-lg text-gray-600 mb-8">欢迎使用心理健康评估系统，请输入性别和年龄</p>
 
         <!-- 性别选择 -->
         <div class="flex justify-center gap-6 mb-6">
@@ -30,7 +30,7 @@
 
         <!-- 年龄输入，图标与输入框隔离 -->
         <div class="flex items-center mb-6 space-x-3">
-          <span class="text-gray-400 text-xl">🎂</span>
+          <span class="text-gray-400 text-xl">🗓</span>
           <input
             type="number"
             v-model.number="age"

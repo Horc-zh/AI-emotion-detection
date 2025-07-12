@@ -1,6 +1,8 @@
 <template>
   <div class="survey-container">
-    <h2>📝 {{ genderLabel }} {{ ageGroupLabel }} 问卷</h2>
+    <h2 class="text-2xl font-bold mb-4">📝 {{ genderLabel }} {{ ageGroupLabel }} 问卷</h2>
+    <br/>
+    <br/>
     <form @submit.prevent="submitSurvey">
       <div
         v-for="(question, index) in questions"
@@ -22,9 +24,10 @@
               required
               :disabled="isSubmitting"
             />
-            {{ option }}
+            {{ option }} &nbsp;&nbsp;
           </label>
         </div>
+        <br/>
       </div>
 
       <!-- 提交按钮容器 -->

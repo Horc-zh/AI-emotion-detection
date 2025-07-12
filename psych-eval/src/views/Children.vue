@@ -2,9 +2,9 @@
 <template>
   <div class="flex min-h-screen">
     <!-- 侧边栏 -->
-    <aside class="w-64 bg-blue-800 text-white flex flex-col">
+    <aside class="w-120 bg-green-800 text-white flex flex-col">
       <!-- Logo / 标题 -->
-      <div class="px-6 py-5 text-2xl font-bold border-b border-blue-700">
+      <div class="px-6 py-5 text-2xl font-bold border-b border-green-700">
         心理测评
       </div>
 
@@ -15,8 +15,8 @@
             <button
               @click="selected = mode.value"
               :class="[
-                'w-full flex items-center px-6 py-3 hover:bg-blue-700 transition-colors duration-200',
-                selected === mode.value ? 'bg-blue-700' : ''
+                'w-full flex items-center px-6 py-3 hover:bg-green-700 transition-colors duration-200',
+                selected === mode.value ? 'bg-green-700' : ''
               ]"
             >
               <span class="mr-3 text-xl">{{ mode.icon }}</span>
@@ -27,7 +27,7 @@
       </nav>
 
       <!-- 底部信息 -->
-      <div class="px-6 py-4 text-sm border-t border-blue-700">
+      <div class="px-6 py-4 text-sm border-t border-green-700">
         <div class="flex justify-between items-center">
           <span>版本 1.0</span>
           <button
@@ -113,10 +113,10 @@ export default {
     return {
       selected: 'overview',
       modes: [
-        { label: '概览', value: 'overview', icon: '🧒' },
-        { label: '填写问卷', value: 'survey', icon: '📝' },
-        { label: '画图评估', value: 'image', icon: '🖼️' },
-        { label: '综合评估', value: 'evaluate', icon: '🔀' }
+        { label: '概览', value: 'overview', icon: '' },
+        { label: '填写问卷', value: 'survey', icon: '' },
+        { label: '画图评估', value: 'image', icon: '' },
+        { label: '综合评估', value: 'evaluate', icon: '' }
       ]
     }
   },

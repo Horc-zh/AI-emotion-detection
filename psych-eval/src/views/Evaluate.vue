@@ -1,21 +1,22 @@
 <template>
   <div class="evaluate-container">
-    <h1>🧠 心理综合评估</h1>
+    <h1 class="text-4xl font-bold mb-8 text-center">🧠 心理综合评估</h1>
 
     <!-- 📝 心情描述 -->
     <div class="section">
-      <h2>📝 请描述您的当前心情</h2>
+      <h2 class="text-2xl font-bold mb-4">📝 请描述您的当前心情</h2>
       <textarea
         v-model="textInput"
         placeholder="请输入您的感受..."
         rows="6"
         style="width: 100%; height: 150px;"
+        class="bg-gradient-to-br from-green-100 to-green-300 p-6"
       ></textarea>
     </div>
 
     <!-- 📋 问卷部分 -->
     <div class="section">
-      <h2>📋 {{ genderLabel }} {{ ageGroupLabel }} 问卷</h2>
+      <h2 class="text-2xl font-bold mb-4">📋 {{ genderLabel }} {{ ageGroupLabel }} 问卷</h2>
       <div
         v-for="(question, index) in questions"
         :key="index"
@@ -30,15 +31,16 @@
               :value="idx"
               v-model="responses[index]"
             />
-            {{ option }}
+            {{ option }} &nbsp;
           </label>
         </div>
+        <br/>
       </div>
     </div>
 
     <!-- 🎨 绘图区域 -->
     <div class="section">
-      <h2>🎨 请绘制表达您感受的图像</h2>
+      <h2 class="text-2xl font-bold mb-4">🎨 请绘制表达您感受的图像</h2>
       <div class="drawing-controls">
         <div class="color-palette">
           <button
